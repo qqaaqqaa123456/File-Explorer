@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6549C709-6577-4B28-8648-56AA559CA565}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ModelingProject1Lib</RootNamespace>
+    <AssemblyName>ModelingProject1Lib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GeneratedCode\Class1.cs">
+      <SourceModelReference>modelbus://ModelStoreAdapter.1.0/ModelingProject1/Class1/C:\Users\yh200\Documents\Visual Studio 2013\Projects\File Explorer\ModelingProject1\ModelingProject1.modelproj%252f49ed8d86-f264-4d9d-a53c-c41db54fa46e</SourceModelReference>
+    </Compile>
+    <Compile Include="GeneratedCode\Enumeration1.cs">
+      <SourceModelReference>modelbus://ModelStoreAdapter.1.0/ModelingProject1/Enumeration1/C:\Users\yh200\Documents\Visual Studio 2013\Projects\File Explorer\ModelingProject1\ModelingProject1.modelproj%252f3c6ff3db-b977-4a01-81b3-cbc410136089</SourceModelReference>
+    </Compile>
+    <Compile Include="GeneratedCode\Interface1.cs">
+      <SourceModelReference>modelbus://ModelStoreAdapter.1.0/ModelingProject1/Interface1/C:\Users\yh200\Documents\Visual Studio 2013\Projects\File Explorer\ModelingProject1\ModelingProject1.modelproj%252f21f11112-92ec-43fa-99b9-494cdad7b301</SourceModelReference>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
