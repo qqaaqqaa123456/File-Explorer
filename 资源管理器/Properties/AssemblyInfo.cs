@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过下列属性集
 // 控制。更改这些属性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("资源管理器 1.0.0.1 Beta7")]
+[assembly: AssemblyTitle("资源管理器 1.0.0.1 Beta9")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("http://blog.csdn.net/zhengzhiren")]

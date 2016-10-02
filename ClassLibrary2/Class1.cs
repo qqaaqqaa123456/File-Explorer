@@ -14,7 +14,8 @@ namespace ClassLibrary2
     {
         public virtual string Search(string path, out string[] sp, string search = "*.sln")
         {
-
+            try
+            {
             if (Directory.Exists(path))
             {
                 string[] v = Directory.GetFiles(path, search, SearchOption.AllDirectories);
@@ -29,6 +30,13 @@ namespace ClassLibrary2
             {
                 throw new ArgumentException("Path is a File!");
             }
+            }
+            catch (UnauthorizedAccessException u)
+            {
+                MessageBox.Show("出现问题，错误信息为： \n"+u.Message);
+                sp = null;
+                return null;
+            }       
         }
         string IClass1.Search(string path, out string[] sp, string search)
         {
